@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import AutoComplete from './AutoComplete';
-import { YearSelectorProps } from '../utils/types';
+import { FilterProps } from '../utils/types';
 
-const YearSelector: React.FC<YearSelectorProps> = ({ years, onSelect, onMassChange, selectedYear, massValue }) => {
+const Filters: React.FC<FilterProps> = ({ years, onSelect, onMassChange, selectedYear, massValue }) => {
     useEffect(() => {
         setInput(selectedYear)
     }, [selectedYear])
@@ -67,4 +67,4 @@ const YearSelector: React.FC<YearSelectorProps> = ({ years, onSelect, onMassChan
     );
 };
 
-export default YearSelector;
+export default Filters;

@@ -31,7 +31,7 @@ export interface MapProps {
     data: DataPoint[];
 }
 
-export interface YearSelectorProps {
+export interface FilterProps {
     years: string[];
     onSelect: Function;
     onMassChange: Function;
